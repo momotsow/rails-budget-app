@@ -1,5 +1,5 @@
 class ExpensesGroupsController < ApplicationController
-    before_action :authenticate_user!
+  before_action :authenticate_user!
   before_action :set_expenses_group, only: %i[show edit update destroy]
 
   # GET /expenses_groups or /expenses_groups.json
