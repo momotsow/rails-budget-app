@@ -73,5 +73,5 @@ group :test do
   gem 'webdrivers'
 end
 gem 'devise'
-gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'ffi', '~> 1.15', '>= 1.15.5'
+gem 'rubocop', '>= 1.0', '< 2.0'

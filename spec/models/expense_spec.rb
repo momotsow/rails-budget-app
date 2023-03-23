@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Expense, type: :model do
   before :each do
-    @user = User.create(name: 'John Doe', email: 'johndoe@gmail.com', password: 123456, password_confirmation: 123456)
+    @user = User.create(name: 'John Doe', email: 'johndoe@gmail.com', password: 123_456, password_confirmation: 123_456)
   end
   context 'validations' do
     it 'is valid with valid attributes' do
