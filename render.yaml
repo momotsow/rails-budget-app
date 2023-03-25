@@ -1,5 +1,5 @@
 databases:
-  - name: Budget App
+  - name: BudgetApp
     databaseName: rails_budget_app_test
     user: rails_budget_app_test_user
 
@@ -12,7 +12,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: Budget App
+          name: BudgetApp
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
