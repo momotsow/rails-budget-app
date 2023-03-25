@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Ability
   include CanCan::Ability
 
@@ -13,7 +11,7 @@ class Ability
 
     return unless user.present?
 
-    can :manage, Expense, user: user
+    can(:manage, Expense, user:)
     can :manage, Group, user:
     #
     # The first argument to `can` is the action you are giving the user
